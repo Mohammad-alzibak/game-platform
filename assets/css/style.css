@@ -1,0 +1,92 @@
+body{
+    background: url(https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1443527216320-7e744084f5a7-1.jpg) center/cover no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    margin: 0;
+    padding-left: 20px;
+    padding-left: 20px;
+    background-color: white
+}
+.logo{
+    color: red;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    display: flex;
+    list-style: none;
+    
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+li{
+    padding-right: 40px;
+    text-decoration: none;
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+
+}
+.container{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.bt {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    
+}
+div{
+   
+    display: flex;
+    border: 1px solid #745cf9;
+}
+p{
+    padding-left: 350px;
+    padding-right: 350px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.Read{
+    border: 1px solid #745cf9;
+    padding: 20px 45px;
+    color: white;
+    background-color: #745cf9;
+}
+.Download{
+    border: 1px solid white;
+    padding: 20px 30px;
+    color: white;
+
+}
+.Download:hover{
+    color: #5234f9;
+}
+.Read:hover{
+    color:  #5234f9;;
+}
+.bottom{
+    color: blue;
+}
