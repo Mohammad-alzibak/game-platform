@@ -16,7 +16,6 @@ header{
 }
 .logo{
     color: red;
-
 }
 nav a{
     text-decoration: none;
@@ -27,7 +26,6 @@ nav ul{
     list-style: none;
     justify-content: space-between;
     padding: 10px;
-    
 }
 nav li{
     padding-right: 40px;
@@ -40,7 +38,7 @@ nav{
 }
 /* main ******************/
 main{
-    background-image: linear-gradient(90deg, #98CD8D 33.33%, #F6F0CF 33.33%, #F6F0CF 50%, #98CD8D 50%, #98CD8D 83.33%, #F6F0CF 83.33%, #F6F0CF 100%);
+    background-image: linear-gradient(90deg, #f2e205 16.67%, #f2cb05 16.67%, #f2cb05 50%, #f2e205 50%, #f2e205 66.67%, #f2cb05 66.67%, #f2cb05 100%);
     background-size: 120.00px 120.00px;
 }
 .container{
