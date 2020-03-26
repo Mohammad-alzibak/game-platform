@@ -4,53 +4,45 @@
 }
 
 body{
-    height: 100vh;
     font-family: 'Raleway', sans-serif;
 }
 /************************** header */
 header{
-    margin: 0;
-    padding-left: 20px;
-    padding-left: 20px;
-    background-color: rgba(255, 255, 255, 0.331);
+    background-color: rgba(0, 0, 0, 0.274);
 }
-.logo{
-    color: red;
+header article{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 10%;
 }
-nav a{
-    text-decoration: none;
-    color: black;
+.nav-name{
+    margin-left: 10%;
+    margin-top: 5%;
+    color: white;
+    font-size: 2.5em;
 }
-nav ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    padding: 10px;
+.nav-liste a:hover{
+    color: white;
+    border: 10px black solid;
+    background-color: black;
+    border-radius: 30px;
 }
-nav li{
-    padding-right: 40px;
-    text-decoration: none;
 
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-}
+
 /* main ******************/
 main{
-    height: 90vh;
-    
-   background: url(/assets/img/photo-1562229125-6d6075419a22.jpeg)center/cover no-repeat;
+    height: 80vh;
+    background: url(/assets/img/photo-1562229125-6d6075419a22.jpeg)center/cover no-repeat;
+    position: sticky;
 }
 .container{
     display: flex;
-    display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
 }
 .bt {
+    padding-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,17 +58,42 @@ main{
     gap: 5%;
 }
 .game-box{
-    height: 30vh;
-    width: 25%;
-    border: 1px  solid black ;
-    border-radius: 2px;
+    height: 40vh;
+    width: 90%;
     margin: auto;
 }
 .container p{
-    padding-left: 350px;
-    padding-right: 350px;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
     color: #F2CB05;
+}
+.frame{
+	text-align: center;	
+	position: relative;
+	cursor: pointer;	
+	perspective: 500px; 
+}
+.frame img {
+	width: 80%;
+	height: 80%;
+}
+.frame .details {
+	width: 60%;
+	height: 80%;	
+	padding: 5% 8%;
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotateY(90deg);
+	transform-origin: 50%;
+	background: rgba(255,255,255,0.9);	
+	opacity: 0;
+	transition: all 0.4s ease-in;
+	
+}
+.frame:hover .details {
+	transform: translate(-50%, -50%) rotateY(0deg);
+	opacity: 1;
 }

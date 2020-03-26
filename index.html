@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/css/style.css">
 
-</head>
+    </head>
 
-<body>
-    <!------------------------ header -->
-    <header>
-        <nav>
-            <h1 class="logo">Game Plattform</h1>
-            <ul>
-                <li><a href="#jana.html">Memory game</a></li>
-                <li><a href="#mohammad.html">Snake Game</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!---------------------------- main -->
-    <main>
-        <section class="container">
-            <h1 class="bt"> This is a gaming Page</h1>
-            <p>Hier kannst du dich rund um Spiele informieren, spielen und auch deine eigenen Kreationen hochladen
-            </p>
-            <div class="games-box">
-                <div class="game-box"> <img src="assets/img/photo-1533158307587-828f0a76ef46.jpeg" alt=""><a id="Jana"
-                        href="#jana.html">Memory game</a></div>
-                <div class="game-box"><img src="assets/img/photo-1474314170901-f351b68f544f.jpeg" alt=""><a
-                        id="Mohammad" href="#mohammad.html">Snake Game</a></div>
-            </div>
-        </section>
-    </main>
+    <body>
+        <!------------------------ header -->
+        <header>
+            <section>
+                <article>
+                    <div class="nav-name">Game Plattform</div>
+                    <div class="nav-liste">
+                        <ul>
+                            <li><a href="#memoryGame">Memory Game</a></li>
+                            <li><a href="#snakeGame">Snake Game</a></li>
+                            <li><a href="#">Game X</a></li>
+                            <li><a href="#">Game Y</a></li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <!-- <nav>
+                <div class="logo">
+                    <h1>Game Plattform</h1>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#jana.html">Memory game</a></li>
+                        <li><a href="#mohammad.html">Snake Game</a></li>
+                    </ul>
+                </div>
+            </nav> -->
+        </header>
+        <!---------------------------- main -->
+        <main>
+            <section class="container">
+                <h1 class="bt"> This is a gaming Page</h1>
+                <p>Hier kannst du dich rund um Spiele informieren, spielen und auch deine eigenen Kreationen hochladen
+                </p>
+                <div class="games-box">
+                    <div class="game-box">
+                        <a id="Jana" href="#jana.html">
+                            <div class="frame">
+                                <img src="assets/img/memory.jpg" alt="">
+                                <div class="details">
+                                    <h1>Memory Game</h1>
+                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iure.</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="game-box">
+                        <a id="Mohammad" href="#mohammad.html"></a>
+                        <div class="frame">
+                            <img src="assets/img/snake.jpg" alt="">
+                            <div class="details">
+                                <h1>Snake Game</h1>
+                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iure.</h2>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
 
 
 
-    <script src="assets/js/main.js"></script>
-</body>
+
+        <script src="assets/js/main.js"></script>
+    </body>
 
 </html>
