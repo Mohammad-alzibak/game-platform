@@ -55,7 +55,7 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #2A00D7;
+    color: #F2CB05;
     font-family: 'Raleway', sans-serif;
     font-size: 35px;
 }
@@ -78,5 +78,5 @@ main{
     line-height: 1.5;
     display: flex;
     flex-direction: column;
-    color: #7345FF;
+    color: #F2CB05;
 }
