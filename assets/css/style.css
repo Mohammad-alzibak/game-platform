@@ -1,41 +1,47 @@
-body{
-    background: url(https://cdn.colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1443527216320-7e744084f5a7-1.jpg) center/cover no-repeat;
+*{
     margin: 0;
     padding: 0;
+}
+
+body{
     height: 100vh;
     font-family: 'Raleway', sans-serif;
 }
+/************************** header */
 header{
     margin: 0;
     padding-left: 20px;
     padding-left: 20px;
-    background-color: white
+    background-color: rgba(255, 255, 255, 0.331);
 }
 .logo{
     color: red;
 
 }
-a{
+nav a{
     text-decoration: none;
     color: black;
 }
-ul{
+nav ul{
     display: flex;
     list-style: none;
-    
     justify-content: space-between;
     padding: 10px;
     
 }
-li{
+nav li{
     padding-right: 40px;
     text-decoration: none;
 
 }
-nav {
+nav{
     display: flex;
     justify-content: space-around;
-
+}
+/* main ******************/
+main{
+    background-image: linear-gradient(90deg, #98CD8D 33.33%, #F6F0CF 33.33%, #F6F0CF 50%, #98CD8D 50%, #98CD8D 83.33%, #F6F0CF 83.33%, #F6F0CF 100%);
+    background-size: 120.00px 120.00px;
 }
 .container{
     display: flex;
@@ -46,7 +52,6 @@ nav {
     flex-direction: column;
 }
 .bt {
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,39 +59,25 @@ nav {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 35px;
-    
 }
-div{
-   
-    display: flex;
-    border: 1px solid #745cf9;
+.games-box{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
 }
-p{
+.game-box{
+    height: 30vh;
+    width: 25%;
+    border: 1px  solid black ;
+    border-radius: 2px;
+    margin: auto;
+}
+.container p{
     padding-left: 350px;
     padding-right: 350px;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
     color: white;
-}
-.Read{
-    border: 1px solid #745cf9;
-    padding: 20px 45px;
-    color: white;
-    background-color: #745cf9;
-}
-.Download{
-    border: 1px solid white;
-    padding: 20px 30px;
-    color: white;
-
-}
-.Download:hover{
-    color: #5234f9;
-}
-.Read:hover{
-    color:  #5234f9;;
-}
-.bottom{
-    color: blue;
 }
