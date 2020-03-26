@@ -7,33 +7,61 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 /************************** header */
+
 header{
-    background-color: rgba(0, 0, 0, 0.274);
+    height: 10vh;
 }
-header article{
+.dropdownmenu{
+    width: 100%;
+    
+    background-color: yellow;
     display: grid;
-    grid-template-columns: 2fr 4fr;
-    gap: 10%;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
 }
-.nav-name{
-    margin-left: 10%;
-    margin-top: 5%;
-    color: white;
-    font-size: 2.5em;
+.dropdownmenu a{
+    background: #30A6E6;
+    height: 8vh;
+	color: #FFFFFF;
+	display: block;
+	font: bold 1.5em sans-serif;
+	text-align: center;
+	text-decoration: none;
+    transition: all .25s ease;
+    padding-top: 3.5vh;
 }
-.nav-liste a:hover{
-    color: white;
-    border: 10px black solid;
-    background-color: black;
-    border-radius: 30px;
+.dropdownmenu div:hover a {
+	background: #000000;
 }
-
-
+#submenu{
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	visibility: hidden;
+	z-index: 1;
+}
+.submenu-box:hover #submenu{
+	opacity: 1;
+	top: 9vh;
+    visibility: visible;
+    margin-left: 40%;
+    width: 20%;
+    list-style: none;
+}
+#submenu li {
+	width: 100%;
+}
+#submenu a:hover {
+    font-size: 1.6em;
+    color: rgb(250, 235, 235);
+}
+#submenu a{
+    background-color:#000000;
+    padding-top: 2vh;
+}
 /* main ******************/
 main{
-    height: 80vh;
-    background: url(/assets/img/photo-1562229125-6d6075419a22.jpeg)center/cover no-repeat;
-    position: sticky;
+    height: 90vh;
+    background-color: white;
 }
 .container{
     display: flex;
@@ -47,7 +75,7 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #F2CB05;
+    color: #30A6E6;
     font-family: 'Raleway', sans-serif;
     font-size: 35px;
 }
@@ -56,6 +84,9 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5%;
+}
+.details{
+    color: #30A6E6;
 }
 .game-box{
     height: 40vh;
@@ -66,7 +97,8 @@ main{
     line-height: 1.5;
     display: flex;
     flex-direction: column;
-    color: #F2CB05;
+    color: #30A6E6;
+    margin: 3vh 0;
 }
 .frame{
 	text-align: center;	
@@ -91,9 +123,9 @@ main{
 	background: rgba(255,255,255,0.9);	
 	opacity: 0;
 	transition: all 0.4s ease-in;
-	
 }
 .frame:hover .details {
 	transform: translate(-50%, -50%) rotateY(0deg);
-	opacity: 1;
+    opacity: 1;
+    background-color: rgba(168, 167, 167, 0.603);
 }
