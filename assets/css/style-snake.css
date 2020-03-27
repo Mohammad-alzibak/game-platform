@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+  margin: 50px auto;
+}
+
+header {
+  height: 10vh;
+}
+.dropdownmenu {
+  width: 100%;
+
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.dropdownmenu a {
+  background: #30a6e6;
+  height: 8vh;
+  color: #ffffff;
+  display: block;
+  font: bold 1.5em sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  padding-top: 3.5vh;
+}
+.dropdownmenu div:hover a {
+  background: #000000;
+}
+#submenu {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+}
+.submenu-box:hover #submenu {
+  opacity: 1;
+  top: 9vh;
+  visibility: visible;
+  margin-left: 40%;
+  width: 20%;
+  list-style: none;
+}
+#submenu li {
+  width: 100%;
+}
+#submenu a:hover {
+  font-size: 1.6em;
+  color: rgb(250, 235, 235);
+}
+#submenu a {
+  background-color: #000000;
+  padding-top: 2vh;
+}
