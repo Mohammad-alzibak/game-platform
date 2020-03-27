@@ -1,0 +1,113 @@
+:root {
+    --color:lightgray;
+    --border-radius:10px;
+    --image:url('https://media.gettyimages.com/vectors/cute-cartoon-dachshunds-in-love-vector-id865392634?s=2048x2048');
+  }
+  
+  .home{
+      border: 1px solid black;
+      background-color: #30A6E6;
+      padding: 3px 15px;
+      text-align: center;
+      margin: 10px;
+      color: white;
+      border-radius: 3px;
+      text-decoration-line: none;
+  }
+  .home:hover{
+      padding: 4px 17px;
+  }
+
+  body {
+    background:#efefef;
+  }
+  
+  #puz, #puzz {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-110%,-50%);
+    width:300px;
+    height:300px;
+    border-radius:var(--border-radius);
+    border:3px dashed lightgray;  
+    user-select:none;
+    overflow:hidden;
+  }
+  #puzz {
+    width:325px;
+    height:325px;
+    transform:translate(15%,-50%);
+    border:0;
+  }
+  
+  #puz i {
+    float:left;
+    width:100px;
+    height:100px;  
+    outline:1px dashed lightgray;  
+  }
+  
+  #puzz i {
+    float:left;
+    width:100px;
+    height:100px;
+    background:var(--color);
+    background-image:var(--image);
+    background-size:300px 300px;
+    cursor:move;
+    margin:4px;
+  }
+  .first {
+    border-top-left-radius:var(--border-radius);
+    background-position:left top !important;
+  }
+  .secon {
+    background-position:center top !important;
+  }
+  .third {
+    border-top-right-radius:var(--border-radius);
+    background-position:right top !important;
+  }
+  .fourt {
+    background-position:left center !important;
+  }
+  .fifth {
+    background-position:center center !important;
+  }
+  .sixth {  
+    background-position:right center !important;
+  }
+  .seven {
+    border-bottom-left-radius:var(--border-radius);
+    background-position:left bottom !important;
+  }
+  .eight {
+    background-position:center bottom !important;
+  }
+  .ninth {
+    border-bottom-right-radius:var(--border-radius);
+    background-position:right bottom !important;
+  }
+  
+  .dropped {
+    background:var(--color);
+    background-image:var(--image);
+    background-size:300px 300px;
+  }
+  .done {
+    opacity:0;
+    pointer-events:none;
+  }
+  
+  .allDone {
+    animation:allDone 1s linear forwards;
+    border:3px solid lightgray !important;
+  }
+  .allDone i {
+    outline:0 !important;
+  }
+  
+  @keyframes allDone {
+    50% { transform:translate(-110%,-50%) scale(1.2); }
+  }
