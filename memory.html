@@ -10,22 +10,36 @@
 </head>
 
 <body>
-    <img src="assets/img/memory/" alt="">
     <header>
-
+        <div class="dropdownmenu">
+            <div><a href="index.html">Games Platform</a></div>
+            <div><a href="about.html">About Me</a></div>
+            <div class="submenu-box"><a href="#">Games ▼</a>
+                <ul id="submenu">
+                    <li><a href="#">Memory Game</a></li>
+                    <li><a href="">Snake Game</a></li>
+                    <li><a href="puzzle.html">Puzzle</a></li>
+                    <li><a href="">Black Jack</a></li>
+                </ul>
+            </div>
+            <div><a href="news.html">News</a></div>
+            <div><a href="contact.html">Contact Us</a></div>
+        </div>
     </header>
     <main>
-        <h1>Memory</h1>
+        <a href="memory.html">
+            <h1>Memory</h1>
+        </a>
         <section class="chouse">
             <p>Choose the number of cards</p>
-            <input type="radio" name="radio" class="radio" value="6" checked>
-            <label for="raio">12</label>
-            <input type="radio" name="radio" class="radio" value="8">
-            <label for="radio">16</label>
-            <input type="radio" name="radio" class="radio" value="10">
-            <label for="radio">20</label>
-            <input type="radio" name="radio" class="radio" value="12">
-            <label for="radio">24</label>
+            <input type="radio" name="radio" id="radio1" class="radio" value="6" checked>
+            <label for="radio1">12</label>
+            <input type="radio" name="radio" id="radio2" class="radio" value="8">
+            <label for="radio2">16</label>
+            <input type="radio" name="radio" id="radio3" class="radio" value="10">
+            <label for="radio3 ">20</label>
+            <input type="radio" name="radio" id="radio4" class="radio" value="12">
+            <label for="radio4">24</label>
 
             <input type="button" name="" id="los" value="Los">
         </section>
